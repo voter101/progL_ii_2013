@@ -1,0 +1,37 @@
+?- append(X,Y,[a,b,c]).
+
+Call: (6) append(_G375, _G376, [a, b, c]) ? creep
+Exit: (6) append([], [a, b, c], [a, b, c]) ? creep
+X = [],
+Y = [a, b, c] ;
+
+Redo: (6) append(_G375, _G376, [a, b, c]) ? creep
+Call: (7) append(_G465, _G376, [b, c]) ? creep
+Exit: (7) append([], [b, c], [b, c]) ? creep
+Exit: (6) append([a], [b, c], [a, b, c]) ? creep
+X = [a],
+Y = [b, c] ;
+
+Redo: (7) append(_G465, _G376, [b, c]) ? creep
+Call: (8) append(_G468, _G376, [c]) ? creep
+Exit: (8) append([], [c], [c]) ? creep
+Exit: (7) append([b], [c], [b, c]) ? creep
+Exit: (6) append([a, b], [c], [a, b, c]) ? creep
+X = [a, b],
+Y = [c] ;
+
+Redo: (8) append(_G468, _G376, [c]) ? creep
+Call: (9) append(_G471, _G376, []) ? creep
+Exit: (9) append([], [], []) ? creep
+Exit: (8) append([c], [], [c]) ? creep
+Exit: (7) append([b, c], [], [b, c]) ? creep
+Exit: (6) append([a, b, c], [], [a, b, c]) ? creep
+X = [a, b, c],
+Y = [] ;
+
+Redo: (9) append(_G471, _G376, []) ? creep
+Fail: (9) append(_G471, _G376, []) ? creep
+Fail: (8) append(_G468, _G376, [c]) ? creep
+Fail: (7) append(_G465, _G376, [b, c]) ? creep
+Fail: (6) append(_G375, _G376, [a, b, c]) ? creep
+false.
