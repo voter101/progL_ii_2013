@@ -13,7 +13,6 @@ reverse([],[]).
 reverse([H|T], X) :-
     reverse(T,Y),
     append(Y,[H],X).
-palindrom([]).
 palindrom(X) :-
     reverse(X,X).
 
