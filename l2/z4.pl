@@ -17,8 +17,4 @@ palindrom(X) :-
     reverse(X,X).
 
 % c)
-select(H, [H|T], T).
-select(X, [H|T], [H|S]) :-
-    select(X, T, S).
-singleton([H|T]) :-
-    select(H, [H|T], []).
+singletion([_]).
