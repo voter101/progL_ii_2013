@@ -1,0 +1,33 @@
+?- select(x,L,[a,b,c]).
+
+Call: (6) select(x, _G376, [a, b, c]) ? creep
+Exit: (6) select(x, [x, a, b, c], [a, b, c]) ? creep
+L = [x, a, b, c] ;
+
+Redo: (6) select(x, _G376, [a, b, c]) ? creep
+Call: (7) select(x, _G453, [b, c]) ? creep
+Exit: (7) select(x, [x, b, c], [b, c]) ? creep
+Exit: (6) select(x, [a, x, b, c], [a, b, c]) ? creep
+L = [a, x, b, c] ;
+
+Redo: (7) select(x, _G453, [b, c]) ? creep
+Call: (8) select(x, _G456, [c]) ? creep
+Exit: (8) select(x, [x, c], [c]) ? creep
+Exit: (7) select(x, [b, x, c], [b, c]) ? creep
+Exit: (6) select(x, [a, b, x, c], [a, b, c]) ? creep
+L = [a, b, x, c] ;
+
+Redo: (8) select(x, _G456, [c]) ? creep
+Call: (9) select(x, _G459, []) ? creep
+Exit: (9) select(x, [x], []) ? creep
+Exit: (8) select(x, [c, x], [c]) ? creep
+Exit: (7) select(x, [b, c, x], [b, c]) ? creep
+Exit: (6) select(x, [a, b, c, x], [a, b, c]) ? creep
+L = [a, b, c, x] ;
+
+Redo: (9) select(x, _G459, []) ? creep
+Fail: (9) select(x, _G459, []) ? creep
+Fail: (8) select(x, _G456, [c]) ? creep
+Fail: (7) select(x, _G453, [b, c]) ? creep
+Fail: (6) select(x, _G376, [a, b, c]) ? creep
+false.
