@@ -13,6 +13,6 @@ select_min(L,X,R) :-
     select(X,L,R).
 
 sel_sort([],[]).
-sel_sort(X,[H|T]) :-
-    select_min(X,H,R),
+sel_sort(X,[M|T]) :-
+    select_min(X,M,R),
     sel_sort(R,T),!.
