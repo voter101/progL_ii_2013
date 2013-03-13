@@ -18,3 +18,6 @@ palindrom(X) :-
 
 % c)
 singletion([_]).
+iksde(ala).
+iksde(alda).
+
