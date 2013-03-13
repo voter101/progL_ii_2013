@@ -15,4 +15,4 @@ select_min(L,X,R) :-
 sel_sort([],[]).
 sel_sort(X,[H|T]) :-
     select_min(X,H,R),
-    sel_sort(T, L1),!.
+    sel_sort(R,T),!.
