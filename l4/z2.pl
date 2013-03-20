@@ -1,19 +1,19 @@
-connection(warszawa,wroclaw).
-connection(warszawa,zakopane).
-connection(warszawa,kalingrad).
-connection(warszawa,wloclawek).
-connection(warszawa,koszalin).
-connection(koszalin,kalingrad).
-connection(koszalin,wloclawek).
-connection(wroclaw,zakopane).
-connection(wroclaw,wloclawek).
-trip(From,To,List) :-
-   trip(From,To,ListT,[]).
-    reverse(ListT,List).
-trip(X,X,List,Ac) :-
-    append(Ac,[X],List).
+conn(warszawa,wroclaw).
+conn(warszawa,zakopane).
+conn(warszawa,kalingrad).
+conn(warszawa,wloclawek).
+conn(warszawa,koszalin).
+conn(koszalin,kalingrad).
+conn(koszalin,wloclawek).
+conn(wroclaw,zakopane).
+conn(wroclaw,wloclawek).
+conn(wroclaw,warszawa).
+
+trip(From,To,[From|T]) :-
+    trip(From,To,T,[To]).
+trip(X,Y,Ac,Ac) :- 
+    conn(X,Y).
 trip(X,Y,List,Ac) :-
-    \+member(X,Ac),
-    append(Ac,[X],AcN),
-    connection(X,Z),
-    trip(Z,Y,List,[X|Ac]).
+    conn(Z,Y),
+    \+member(Z,Ac),
+    trip(X,Z,List,[Z|Ac]).
