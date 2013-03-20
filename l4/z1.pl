@@ -1,3 +1,5 @@
+% Pierwsze rozwiązanie na jakie wpadliśmy. Jest takie tragiczne, że wtyd
+% go używać. ;(
 len([],0).
 len([_],1) :- !.
 len([_|T],Y) :-
