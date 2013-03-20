@@ -16,4 +16,5 @@ trip(X,Y,Ac,Ac) :-
 trip(X,Y,List,Ac) :-
     conn(Z,Y),
     \+member(Z,Ac),
+    \+(X==Z),
     trip(X,Z,List,[Z|Ac]).
