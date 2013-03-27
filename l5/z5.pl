@@ -1,4 +1,4 @@
-split([],Med,[],[]) :- !.
+split([],_,[],[]) :- !.
 split([H|T],Med,[H|X],Y) :-
     H < Med,!,
     split(T,Med,X,Y).
