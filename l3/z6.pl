@@ -1,5 +1,6 @@
+% Wersja trollerska, ale treść zadania nie doprecyzowała co mamy zrobić :>
 reverse(X,Y) :-
-    reverse(X,[],Y),!. % To odcięcie w tym mejscu wystarczy
+    reverse(X,[],Y),!.
 
 reverse([],A,A).
 reverse([H|T],A,Y) :-
