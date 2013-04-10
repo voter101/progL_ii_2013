@@ -1,0 +1,75 @@
+1)  G = <E,V,S,P>
+    E = {0}
+    V = {S}
+    S = S
+    P = {
+        S -> 00S
+        S -> e
+    }
+
+2)  G = <E,V,S,P>
+    E = {0,1}
+    V = {S,T}
+    S = S,
+    P = {
+        S -> 0S
+        S -> M
+        S -> e
+        M -> 1M
+        M -> e
+    }
+
+3)  G = <E,V,S,P>
+    E = {0,1}
+    V = {S,T}
+    S = S
+    P = {
+        S -> 0S
+        S -> 1M
+        S -> 11M
+        S -> e
+        M -> 0S
+        M -> e
+    }
+
+4)  G = <E,V,S,P>
+    E = {0,1}
+    V = {S,T}
+    S = S
+    P = {
+        S -> 0T
+        S -> 1S
+        T -> 0S
+        T -> 1T
+    }
+
+5)  G = <E,V,S,P>
+    E = {0,1}
+    V = {S,T,U,W}
+    S = S
+    P = {
+       S -> 0T
+       S -> 1W // być może koniec
+
+       T -> 0S
+       T -> 1U
+
+       U -> 0W // być może koniec
+       U -> 1T
+
+       W -> 0U
+       W -> 1S
+       W -> e
+    }
+
+6)  G = <E,V,S,P>
+    E = {0,1}
+    V = {S,T}
+    S = S
+    P = {
+        S -> 0T
+        S -> 1T
+        S -> e
+        T -> 0S
+        T -> 1T
+    }

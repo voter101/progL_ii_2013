@@ -1,6 +1,5 @@
 put(E,[H|T],[E,H|T]).
 get([H|T],H,T).
-empty().
 empty([]).
 addall(E,G,S,R) :-
     findall(E,G,R1),
