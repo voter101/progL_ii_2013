@@ -1,0 +1,19 @@
+Opisywany język:
+    {0^n 1^m : n,m∈N n>=m}
+Kontrprzykład: 001:
+S->0S->00S1->001
+S->0S1->00S1->001
+
+Przykład nowego języka:
+G = <E,V,S,P>
+E = {0,1}
+V = {S,T}
+S = S
+P = {
+    S -> 0S
+    S -> 0T1
+    S -> e
+    T -> 0T1
+    T -> e
+    }
+
