@@ -1,3 +1,4 @@
+% Zacząłem robić zadanie, jednak z powodu braku czasu musiałem z niego zrezygnować
 s(0).
 s(2).
 s(4).
