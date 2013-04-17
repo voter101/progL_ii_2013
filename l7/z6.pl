@@ -3,8 +3,11 @@ word --> "".
 word --> "a", word, "b".
 % Ile program robi nawrótów?
 % "" - 0
-% "aabb" - 1 (? - do czasu zwrócenia true, robi tylko 1 nawrót)
+% "aabb" - 1 
 % "aba" - 3
-word2(X) --> word2(0,X).
-word2(X,X) --> [].
-word2(X,Y) --> [a],word2(X1,Y),{X is X1+2},[b].
+word2 --> "".
+word2 --> "a", word, "b",!. % deterministyczne
+% Z liczeniem
+word3(0) --> [].
+word3(X) --> [a], word3(Y),{X is Y + 1}, [b],!.
+% Wywoływanie: phrase(word3(X), [a,a,b,b]).
