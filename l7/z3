@@ -1,9 +1,7 @@
-%zad3
-%
-%<s> ::= <znak><liczba><ulamek>
-%<znak> ::= + | - | epsilon
-%<ulamek> ::= <przecinkowy> | <wykladnik> | <przecinkowy><wykladnik>
-%<przecinkowy> ::= .<liczba>
-%<wykladnik> ::= e<znak><liczba>
-%<liczba> ::= 1-9<cyfra>
-%<cyfra> ::= 0-9 | epsilon
+<s> ::= <znak><liczba><ulamek>
+<znak> ::= + | - | epsilon
+<ulamek> ::= <przecinkowy> | <wykladnik> | <przecinkowy><wykladnik>
+<przecinkowy> ::= .<liczba>
+<wykladnik> ::= e<znak><liczba>
+<liczba> ::= 1-9<cyfra>
+<cyfra> ::= 0-9 | epsilon
