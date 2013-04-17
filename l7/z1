@@ -1,9 +1,9 @@
 <w> ::= <atom> | (<w1>)
-<w4> ::= <w> | <o4><w>
-<w3> ::= <w4> | <w3><o3><w4>  // Po lewej tylko operatory o tym samym priorytecie co o3. o3 jest operatorem głównym
+<w1> ::= <w2> | <w2_alt> | <w1><o1><w2> | <w1><o1><w2_alt>
 <w2> ::= <w3> | <w2><o2><w3>
 <w2_alt> ::= -<w3> | -<w2><o2><w3>
-<w1> ::= <w2> | <w2_alt> | <w1><o1><w2> | <w1><o1><w2_alt>
+<w3> ::= <w4> | <w3><o3><w4>  // Po lewej tylko operatory o tym samym priorytecie co o3. o3 jest operatorem głównym
+<w4> ::= <w> | <o4><w>
 <o1> ::= < | <= | = | <> | >= | > | in
 <o2> ::= + | - | or
 <o3> ::= / | div | mod | and // Brakuje *, ale nie ma tego w treści zadania :D
