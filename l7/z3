@@ -1,6 +1,9 @@
-% BARDZO OGÓLNY zarys. Nie chciało mi się tego pisać. :D
-%oznaczenie: e - pusty znak, E - znak 'e', matematyczny
-<literal> ::= <znak><int><po_przec><e>
-<po_przec> ::= ,<ciag_cyfr> | e
-<znak> ::=  + | - | e
-<E> ::= E<znak><int> | e
+%zad3
+%
+%<s> ::= <znak><liczba><ulamek>
+%<znak> ::= + | - | epsilon
+%<ulamek> ::= <przecinkowy> | <wykladnik> | <przecinkowy><wykladnik>
+%<przecinkowy> ::= .<liczba>
+%<wykladnik> ::= e<znak><liczba>
+%<liczba> ::= 1-9<cyfra>
+%<cyfra> ::= 0-9 | epsilon
