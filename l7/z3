@@ -1,0 +1,5 @@
+%oznaczenie: e - pusty znak, E - znak 'e', matematyczny
+<literal> ::= <znak><int><po_przec><e>
+<po_przec> ::= ,<ciag_cyfr> | e
+<znak> ::=  + | - | e
+<E> ::= E<znak><int> | e

@@ -1,9 +1,9 @@
 <atom> ::= <liczba> | <identyfikator>
-<w> ::= (<w1>) | <atom>
 <w1> ::= <w2> | <w1><o1><w1>
 <w2> ::= <w3> | <w2><o2><w3>
 <w3> ::= <w4> | <w3><o3><w4>
-<w4> ::= <w>  | <w><o4><w4> // Odwrotnie, bo łączność w prawo
+<w4> ::= <w5>  | <w5><o4><w4> // Odwrotnie, bo łączność w prawo
+<w5> ::= <atom> | (<w1>)
 <o1> ::= = | <
 <o2> ::= +
 <o3> ::= *
