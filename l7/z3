@@ -1,3 +1,4 @@
+% BARDZO OGÓLNY zarys. Nie chciało mi się tego pisać. :D
 %oznaczenie: e - pusty znak, E - znak 'e', matematyczny
 <literal> ::= <znak><int><po_przec><e>
 <po_przec> ::= ,<ciag_cyfr> | e
