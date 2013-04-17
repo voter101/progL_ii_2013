@@ -1,6 +1,7 @@
 % Cukier syntaktyczny
 word --> "".
 word --> "a", word, "b".
+% Używanie expand_term: expand_term((word-->"a",word,"b"),X).
 % Ile program robi nawrótów?
 % "" - 0
 % "aabb" - 1 
