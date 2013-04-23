@@ -7,7 +7,7 @@ word --> "a", word, "b".
 % "aabb" - 1 
 % "aba" - 3
 word2 --> "".
-word2 --> "a", word, "b",!. % deterministyczne
+word2 --> "a", word2, "b",!. % deterministyczne
 % Z liczeniem
 word3(0) --> [].
 word3(X) --> [a], word3(Y),{X is Y + 1}, [b],!.
