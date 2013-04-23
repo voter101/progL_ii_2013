@@ -1,4 +1,4 @@
-flip(curry f) a b = curry (f . swap) 
+flip(curry f) a b = curry (f . swap) a b
 // Uwaga dla niewtajemniczonych
 // L: niech (curry f) = g; flip g a b = g b a
 curry f b a = (f . swap)(a,b)
