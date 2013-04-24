@@ -1,3 +1,4 @@
+% Uwaga, bo nie działa dla "a*a*b"
 ex(A) --> sex(A).
 ex(star(A,B)) --> ex2(A),"*",sex(B),!.
 ex2(A) --> sex(A).
