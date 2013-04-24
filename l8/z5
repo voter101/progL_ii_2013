@@ -1,0 +1,11 @@
+// Dojdziemy z lewej strony na prawą
+// ROZPISANE NA LUŹNO. ALE IDEA JEST OK
+(cross(f,g).cross(h,k))(x) =
+cross(f,g)(cross(h,k)(x)) =
+pair(f.fst,g.snd)(pair(h.fst(x),k.snd(x)) = 
+pair(f.fst,g.snd)(h(fst(x)),k(snd(x))) = 
+f(fst(h(fst(x)),k(snd(x)))), g(snd(h(fst(x),k(snd(x))))) =
+f(h(fst(x))), g(k(snd(x))) = 
+f.h.fst(x), g.k.snd(x) =
+pair(f.h.fst, g.k.snd)(x) = 
+cross(f.h, g.k)(x) = P
