@@ -3,3 +3,9 @@ flip(curry f) a b = curry (f . swap) a b
 // L: niech (curry f) = g; flip g a b = g b a
 curry f b a = (f . swap)(a,b)
 f(b,a) = f(swap(a,b)) // Z tego wnioskuję swap(a,b) = (b,a)
+
+// Uwaga po ćwiczeniu:
+// Musimy wziąć jakąś funkcję, żeby wyprowadzić 
+// f(b,a) = f(swap(a,b)) => (b,a) = swap(a,b)
+// Np. f x = x
+// f::(a,b) -> (a,b)
