@@ -5,9 +5,8 @@
 -- Wiktor Mociun, indeks: 258354
 --
 -- Uwaga: Komentarze i nazwy funkcji są w języku angielskim
---
--- Notice: If any pond has size more than 9, program won't work. buildField
---         function needs fix
+-- Uwaga: Wyniki wyświeltane są w ASCII arcie
+
 import Data.Set
 import Data.List
 import Data.Char
