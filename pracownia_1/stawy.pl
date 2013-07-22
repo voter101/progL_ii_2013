@@ -155,7 +155,7 @@ noDikeSquare(X,Y,AssocList) :-
 isDikeConsistent(AssocList) :-
     size(X,Y),
     buildDikeList(X,Y,DikeList,[],AssocList),!,
-    goDike(DikeList).
+    goDikeGo(DikeList).
 
 buildDikeList(0,1,R,R,_).
 buildDikeList(0,Y,R,Acc,AssocList) :-
@@ -175,21 +175,21 @@ buildDikeList(X,Y,R,Acc,AssocList) :-
     \+get_assoc([X,Y],AssocList,_),
     buildDikeList(X1,Y,R,[[X,Y]|Acc],AssocList).
 
-goDike([]).
-goDike([[X,Y]|T]) :-
-    goDike(X,Y,[[X,Y]|T],[]),!.
-goDike(_,_,[],[]).
-goDike(X,Y,DikeList,DikeList6) :-
+goDikeGo([]).
+goDikeGo([[X,Y]|T]) :-
+    goDikeGo(X,Y,[[X,Y]|T],[]),!.
+goDikeGo(_,_,[],[]).
+goDikeGo(X,Y,DikeList,DikeList6) :-
     size(XMax,YMax),
     between(1,XMax,X),between(1,YMax,Y),
     select([X,Y],DikeList,DikeList2),
     X1 is X + 1,X2 is X - 1,
     Y1 is Y + 1,Y2 is Y - 1,
-    goDike(X,Y1,DikeList2,DikeList3),
-    goDike(X,Y2,DikeList3,DikeList4),
-    goDike(X1,Y,DikeList4,DikeList5),
-    goDike(X2,Y,DikeList5,DikeList6).
-goDike(_,_,D,D).
+    goDikeGo(X,Y1,DikeList2,DikeList3),
+    goDikeGo(X,Y2,DikeList3,DikeList4),
+    goDikeGo(X1,Y,DikeList4,DikeList5),
+    goDikeGo(X2,Y,DikeList5,DikeList6).
+goDikeGo(_,_,D,D).
 
 
 %% --=== SECTION: Preparing result to return ===---
