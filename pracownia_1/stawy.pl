@@ -1,3 +1,5 @@
+% Pracownia oceniona na 40/50. Program dziala bardzo wolno.
+
 %%%%   Programowanie (L) 2013 - Pracownia 
 %  
 %  Wiktor Mociun, nr. indeksu: 258354
