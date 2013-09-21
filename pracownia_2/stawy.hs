@@ -1,3 +1,5 @@
+-- Pracownia sprawdzona - 41/50. Program działa wolno, ma problemy z niektórymi przykładami.
+
 -- Programowanie (L) 2013 - Pracownia nr. 2
 --
 -- Wersja 4. - "Stawy i groble"
