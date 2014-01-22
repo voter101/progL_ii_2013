@@ -6,7 +6,6 @@
 --
 -- Wiktor Mociun, indeks: 258354
 --
--- Uwaga: Komentarze i nazwy funkcji są w języku angielskim
 -- Uwaga: Wyniki wyświeltane są w ASCII arcie
 
 import Data.Set
