@@ -6,8 +6,6 @@
 %
 %         Pracownia nr.1, wersja 4:  "Stawy i Groble"
 %
-%  Uwaga: Komentarze do kodu są w j. angielsku, ponieważ kod programu także jest
-%         w tym języku.
 %  Uwaga: Program działa tylko na SWI-Prologu (testowany na v.5.10.4), w związku
 %         z użyciem zaimplementowanych w prologu list asocjacyjnych (lib assoc)
 %  Link: http://www.swi-prolog.org/pldoc/doc_for?object=section%282,%27A.3%27,swi%28%27/doc/Manual/assoc.html%27%29%29
