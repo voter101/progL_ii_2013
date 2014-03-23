@@ -2,7 +2,7 @@ halve :: [a] -> ([a], [a])
 halve xs = (take half xs, drop half xs)
     where half = (length xs) `div` 2
 
-merge :: Ord a => ([a], [a]) -> [a]
+merge :: Ord a -> ([a], [a]) -> [a]
 merge (x, []) = x
 merge ([], x) = x
 merge ((x:xs), (y:ys)) = case x < y of
