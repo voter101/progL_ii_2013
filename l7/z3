@@ -3,5 +3,4 @@
 <ulamek> ::= <przecinkowy> | <wykladnik> | <przecinkowy><wykladnik>
 <przecinkowy> ::= .<liczba>
 <wykladnik> ::= e<znak><liczba>
-<liczba> ::= 1-9<cyfra>
-<cyfra> ::= 0-9 | epsilon
+<liczba> ::= 1-9<liczba>| epsilon
