@@ -69,8 +69,6 @@
     V = {S}
     S = S
     P = {
-        // Osobiście nie sprawdziłem tego rozwiązania. 
-        // Przydałoby się, żeby ktoś je także sprawdził i usunąłem ten komentarz, gdyby było poprawne
         S -> 1S0S0
         S -> 0S1S0
         S -> 0S0S1
